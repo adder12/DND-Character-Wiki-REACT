@@ -1,5 +1,5 @@
 import React from "react";
-import {BrowserRouter, Route, Link} from "react-router-dom";
+import {Link} from "react-router-dom";
 import "./style.css";
 
 
@@ -9,6 +9,7 @@ import "./style.css";
 
 function Navbar(){
 return (
+    <div id="navDiv">
 <nav>
 
     <ul className="navbar">
@@ -30,7 +31,7 @@ return (
 
     </ul>
 </nav>
-
+</div>
 );
 
 

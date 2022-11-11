@@ -39,6 +39,10 @@ h1{
     background-color:#131a22;
 }
 
+#navDiv{
+  background-color: #131a22;
+}
+
 #character{
     display:inline;
     float: left;
@@ -188,4 +192,5 @@ padding: 0px;
 #trailer {
 display:block;
   margin: auto;
+  text-align: center;
 }

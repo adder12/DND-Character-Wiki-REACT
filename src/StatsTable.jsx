@@ -7,7 +7,7 @@ function Table(props) {
     <>
       <hr />
       <table>
-        <tBody>
+        <tbody>
         <tr>
           <td>Class:</td>
           <td>{props.class}</td>
@@ -29,7 +29,7 @@ function Table(props) {
           <td>AC:</td>
           <td>{props.ac}</td>
         </tr>
-        </tBody>
+        </tbody>
       </table>
     </>
   );

@@ -1,5 +1,6 @@
 import React from "react";
 import Table from "../StatsTable";
+
 function Blaze() {
   return (
     <>
@@ -18,7 +19,7 @@ function Text() {
   return (
     <>
       <div id="info">
-        <h1>Blaze Everhearth</h1>
+        <PageTitle/>
         <p>
           Blaze Everhearth is a Fire Genasi blood hunter. There are many words
           that could be used to describe Blaze:
@@ -47,6 +48,12 @@ function Text() {
       </div>
     </>
   );
+}
+
+function PageTitle(){
+    return (
+        <h1>Blaze Everhearth</h1>
+    )
 }
 
 function Video() {

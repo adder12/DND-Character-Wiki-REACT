@@ -3,16 +3,21 @@ import { useEffect } from "react";
 import "../Embed";
 import YoutubeEmbed from "../Embed";
 let slideIndex = 1;
+
+
+
 function Home() {
   useEffect(() => {
-    showSlides();
+    ShowSlides();
   });
 
   return (
     <>
       <Heading />
       <SlideDiv />
-      <Trailer />
+      <div> <Trailer />
+      </div>
+     
     </>
   );
 }
@@ -22,8 +27,8 @@ function Heading() {
 }
 
 function SlideDiv() {
-  const handleClick = (value) => {
-    plusSlides(value);
+  const HandleClick = (value) => {
+    PlusSlides(value);
   };
 
   return (
@@ -52,10 +57,10 @@ function SlideDiv() {
         <div class="text">Hera</div>
       </div>
 
-      <button class="prev" onclick={(event) => handleClick()}>
+      <button class="prev" onClick={(event) => HandleClick()}>
         &#10094;
       </button>
-      <button class="next" onclick={(event) => handleClick()}>
+      <button class="next" onClick={(event) => HandleClick()}>
         &#10095;
       </button>
     </div>
@@ -72,7 +77,7 @@ function Trailer() {
   );
 }
 
-function showSlide(n) {
+function ShowSlide(n) {
   let i;
   let slides = document.getElementsByClassName("mySlides");
   let dots = document.getElementsByClassName("dot");
@@ -93,15 +98,15 @@ function showSlide(n) {
 }
 
 window.onload = () => {
-  showSlides();
+  ShowSlides();
 };
 
 // Next/previous controls
-function plusSlides(n) {
-  showSlide((slideIndex += n));
+function PlusSlides(n) {
+  ShowSlide((slideIndex += n));
 }
 
-function showSlides() {
+function ShowSlides() {
   let i;
   let slides = document.getElementsByClassName("mySlides");
   for (i = 0; i < slides.length; i++) {
@@ -112,7 +117,7 @@ function showSlides() {
     slideIndex = 1;
   }
   slides[slideIndex - 1].style.display = "block";
-  setTimeout(showSlides, 4000);
+  setTimeout(ShowSlides, 4000);
 }
 
 export default Home;
