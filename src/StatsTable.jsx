@@ -1,0 +1,36 @@
+import React from "react";
+import ReactDom from "react-dom";
+import "./style.css";
+
+function Table(props) {
+  return (
+    <>
+      <hr />
+      <table>
+        <tr>
+          <td>Class:</td>
+          <td>{props.class}</td>
+        </tr>
+        <tr>
+          <td>Subclass</td>
+          <td>{props.sub}</td>
+        </tr>
+
+        <tr>
+          <td>Level:</td>
+          <td>{props.lvl}</td>
+        </tr>
+        <tr>
+          <td>HP:</td>
+          <td>{props.hp}</td>
+        </tr>
+        <tr>
+          <td>AC:</td>
+          <td>{props.ac}</td>
+        </tr>
+      </table>
+    </>
+  );
+}
+
+export default Table;
