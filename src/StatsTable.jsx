@@ -1,5 +1,5 @@
 import React from "react";
-import ReactDom from "react-dom";
+
 import "./style.css";
 
 function Table(props) {
@@ -7,6 +7,7 @@ function Table(props) {
     <>
       <hr />
       <table>
+        <tBody>
         <tr>
           <td>Class:</td>
           <td>{props.class}</td>
@@ -28,6 +29,7 @@ function Table(props) {
           <td>AC:</td>
           <td>{props.ac}</td>
         </tr>
+        </tBody>
       </table>
     </>
   );

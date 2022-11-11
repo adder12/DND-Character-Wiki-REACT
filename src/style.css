@@ -176,7 +176,16 @@ padding: 0px;
 .video-responsive iframe {
   left: 0;
   top: 0;
-  height: 100%;
-  width: 100%;
+
   position: absolute;
+}
+
+.charVid{
+  width: 320;
+  height:240;
+}
+
+#trailer {
+display:block;
+  margin: auto;
 }
