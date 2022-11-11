@@ -26,7 +26,7 @@ function Text() {
         <h1>Hera Khan(L'dara)</h1>
         <p>
           Hera L'dara is an Air Genasi Chronurgy Wizard. <br />
-          Originally born on the moon to the ruling family
+          Originally born on the moon into the ruling family
           <br />
           Just over a year ago Hera's twin sister D'vana disappeared without
           <br />
@@ -65,7 +65,7 @@ function Video() {
     <>
       {" "}
       <hr></hr>
-      <h2>Marrisa's Song:</h2>
+      <h2>Hera's Song:</h2>
       <YoutubeEmbed embedId="9n3A_-HRFfc" />
     </>
   );

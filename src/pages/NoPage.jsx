@@ -3,15 +3,15 @@ import "../style.css";
 function NoPage() {
   return (
     <>
-      <h1>Error:404</h1>
+      <h1 style={{textAlign: 'center'}}>Error:404</h1>
       <br />
-      <p>
+      <h1 style={{textAlign: 'center'}}>
         <strong>*gasp*</strong>
-      </p>
-      <p>Oh, uh, I didn't see you there. </p>
-      <p>Umm, I dont think you should be here</p>
+      </h1>
+      <p style={{textAlign: 'center'}}>Oh, uh hello, I didn't see you there. </p>
+      <p style={{textAlign: 'center'}}>Umm, I dont think you should be here</p>
 
-      <p>You should probably leave</p>
+      <p style={{textAlign: 'center'}}>You should probably leave</p>
     </>
   );
 }

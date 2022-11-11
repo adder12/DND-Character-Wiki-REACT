@@ -15,12 +15,14 @@ function Home() {
     <>
       <Heading />
       <SlideDiv />
+
       <div> <Trailer />
       </div>
      
     </>
   );
 }
+
 
 function Heading() {
   return <h1>DnD Characters</h1>;
@@ -57,10 +59,10 @@ function SlideDiv() {
         <div class="text">Hera</div>
       </div>
 
-      <button class="prev" onClick={(event) => HandleClick()}>
+      <button class="prev" onClick={(event) => HandleClick(-1)}>
         &#10094;
       </button>
-      <button class="next" onClick={(event) => HandleClick()}>
+      <button class="next" onClick={(event) => HandleClick(1)}>
         &#10095;
       </button>
     </div>
@@ -117,7 +119,7 @@ function ShowSlides() {
     slideIndex = 1;
   }
   slides[slideIndex - 1].style.display = "block";
-  setTimeout(ShowSlides, 4000);
+  setTimeout(ShowSlides, 6000);
 }
 
 export default Home;
